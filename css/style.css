@@ -65,15 +65,21 @@ main{
     text-align: center;
 }
 .imagenes img{
-    margin: 10px;
-    width:  400px;
-    height: 500px;
+    margin: 30px;
+    width:  200px;
+    height: 300px;
     border: none;
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
     border-color: #9f3647;
      
+}
+.imagenes img:hover{
+ 
+    border-color: white;
+    opacity: 0.7;
+
 }
 .buscador{
     text-align: center;
