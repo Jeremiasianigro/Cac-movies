@@ -68,6 +68,9 @@ main{
     margin: 10px;
     width:  400px;
     height: 500px;
+    border: none;
+    border-radius: 10px;
+    border-color: #9f3647;
 }
 .buscador{
     text-align: center;
