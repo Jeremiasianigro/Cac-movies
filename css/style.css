@@ -8,22 +8,25 @@
 }
 .Botones-nav{ 
     text-align: right;
-    padding: 20px;
+    padding: 10px;
 
 } 
 .Botones-nav li{
-    
     display: inline; 
     margin: 20px;
+    font-size: medium;
+   
 }
 .Botones-nav li:hover{
+    
     border: none; 
-    padding: 20px 40px; 
-    background-color: #007bff; 
+    background-color:#9f3647; 
     color: #fff; 
-    font-size: 16px; 
     cursor: pointer; 
-    border-radius: 5px; 
+    border-radius: 10px; 
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
 }
 header{
     width: 100%;
@@ -41,7 +44,7 @@ main{
 
 .principal{
 
-    background-image: url("fondo4.jpg");
+    background-image: url("fondo7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,8 +94,10 @@ main{
 
 }
 .buscador #busca{
+    background-color: azure;
     width: 500px;
     height: 30px;
+    color: black;
     border: none;
     border-radius: 50px;
     border-width: 5px;
@@ -103,6 +108,10 @@ main{
     font-weight: bold;
     
 
+}
+.buscador #busca:hover{
+    border-color: white;
+      
 }
 .buscador #boton{
     width: 80px;
@@ -118,6 +127,9 @@ main{
     font-weight: bold;
 
 }
+.buscador #boton:hover{
+    border-color: white;   
+}
 .botones_pie_de_pagina button{
     margin: 40px;
     width: 100px;
@@ -131,6 +143,9 @@ main{
     font-size: larger;
     text-align: center;
     font-weight: bold;
+}
+.botones_pie_de_pagina button:hover{
+    border-color: white;   
 }
 
 footer{
