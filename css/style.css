@@ -90,6 +90,48 @@ main{
    margin-top: 150px;
 
 }
+.buscador #busca{
+    width: 500px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #9f3647;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+.buscador #boton{
+    width: 80px;
+    height: 40px;
+    background-color: #9f3647;
+    border: none;
+    border-radius: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #9f3647;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+
+}
+.botones_pie_de_pagina button{
+    margin: 40px;
+    width: 100px;
+    height: 40px;
+    background-color: #9f3647;
+    border: none;
+    border-radius: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #9f3647;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
 
 footer{
     background-color:  #9f3647;
