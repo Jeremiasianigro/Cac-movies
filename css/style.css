@@ -4,6 +4,7 @@
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     color: white;
+    box-sizing: border-box;
   
 }
 nav {
@@ -12,6 +13,7 @@ nav {
     width: 100%;
     background-color:#9f3647; 
     padding: 10px 0; 
+    z-index: 1000;
   }
 .Botones-nav{ 
     text-align: right;
@@ -71,20 +73,39 @@ main{
     font-size: 40px;
    
 }
-.imagenes{
-    text-align: center;
+.contenedor-imagenes-y-botones {
+    max-width: 100%;
+    overflow-x: auto; 
+    white-space: nowrap; 
 }
-.imagenes img{
-    margin: 30px;
-    width:  200px;
+
+
+
+.imagenes .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    position: relative; 
+    
+}
+
+.imagenes .grid-item img {
+    width: 200px;
     height: 300px;
-    border: none;
+    object-fit: cover;
     border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #9f3647;
-     
+    border: 5px solid #9f3647;
+    position: relative;
+    z-index: 1; 
 }
+
+.imagenes .grid-item {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Mantén el aspect ratio de 1:1 para cada imagen */
+}
+
+
 .imagenes img:hover{
  
     border-color: white;
@@ -103,7 +124,7 @@ main{
 .buscador #busca{
     background-color: azure;
     width: 500px;
-    height: 30px;
+    height: 40px;
     color: black;
     border: none;
     border-radius: 50px;
@@ -137,7 +158,13 @@ main{
 .buscador #boton:hover{
     border-color: white;   
 }
+.botones_pie_de_pagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .botones_pie_de_pagina button{
+   
     margin: 40px;
     width: 100px;
     height: 40px;
